@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Candlekeep</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "275px";
+              document.getElementById("main").style.marginLeft = "275px";
+            }
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="https://forgottenrealms.fandom.com/wiki/Sword_Coast" target="_blank"><img src="img/dnd.jpg" height=25px/> The Sword Coast</a>
+          <a href="https://www.dndbeyond.com/characters/builder#/ target="_blank""><img src="img/dndbeyond.jpg" height=25px/> Create a Character</a>
+          <a href="https://www.facebook.com/william.murton.13?ref=bookmarks" target="_blank"><img src="img/facebook.png" height=25px/> Contact Me</a>
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 intro">
+                        <h1><span id="hamburgerbutton" onclick="openNav()">≡</span>Candlekeep Library</h1>
+                        <p>In the fantasy world of Dungeons and Dragons, within the realm of Faerûn, due east of the Wood of Sharp Teeth stands Candlekeep. The great keep never fails to take ones breath away: it stands on a volcanic crag a hundred or so feet from the coastline, a flat-topped spur of rough stone out in the midst of the surging sea. Imagine, if you can, the top of this crag hemmed in entirely by a tall wall. This wall is interrupted by several towers all the way around, and it encloses a large space from which even more of these same towers rise. Those who have seen this vista from above have said that it looks like nothing so much as a cake decorated with too many candles. The mist of sea-spray fills the air nearest the western walls, and in winter, this moisture can cause treacherous build-ups of ice. Sometimes entire towers along the western edge of the keep have to be abandoned for the season, they become so overtaken by frost.</p>
+
+                        <p>From the center rises the largest and thickest tower of Candlekeep. If the other towers are well-wrought branches and blossoms, then this surely is the bole of the tree: strong, massive, and rising well above the perimeter structures. About the central keep a garden spirals in rising steps, and those lucky enough to enter the library proper do so by passing around and up through this green space to the keep’s main door. However, most folk who visit Candlekeep see this structure only from the courtyard east of it, where the facilities for arriving scholars lie.</p>
+
+                        <p>The only gate into Candlekeep stands at the end of the Way of the Lion, which is the only road that provides access to and from the outside world. The route extends from Beregost, leagues away, and winds a lonely path out on the peninsula where Candlekeep stands.</p>
+                    </div>
+                <div class="col-12 col-lg-6 intro" id="bluepicture">
+                    <a data-fancybox="gallery" class="characterimages" href="img/faerun.JPG">
+                    <img src="img/faerun.JPG" class="characterimages" height=100% width=100% opacity=none/>
+                    </a>
+                </div>
+            </div>
+            <div class="row avowed">
+                <div class="col-12 col-lg-4"><h1>The Avowed</h1></div>
+                <div class="col-12 col-lg-8">A select group of monks, paladins, clerics and paladins are dedicated to maintaining the land and the library of Candlekeep. These cloistered individuals are of strong mind and conditioned body. They  are very, very powerful. The Avowed are the sworn servants of the great keep, each rigorously tested to weed out any deceit before being permitted to take the oaths of the order. Their first priority is the defense of the library’s knowledge against those who would steal or destroy it, but also against natural effects that might do likewise, such as mold, wet, and decay. Many of the Avowed wield various kinds of magic items to aid in these endeavors, and Candlekeep’s facilities include more than a few scriptoria to facilitate the copying of books becoming worn, binderies to repair the same, and even magical storage that preserve rare books from any further decay or damage.</div>
+                    <button class="btn monks col-12 col-lg-3" 
+                    onClick="window.open('https://www.dndbeyond.com/classes/monk')">Monks</button>
+                    <button class="btn wizards col-12 col-lg-3" onClick="window.open('https://www.dndbeyond.com/classes/wizard')">Wizards</button>
+                    <button class="btn clerics col-12 col-lg-3" onClick="window.open('https://www.dndbeyond.com/classes/cleric')">Clerics</button>
+                    <button class="btn paladins col-12 col-lg-3" onClick="window.open('https://www.dndbeyond.com/classes/cleric')">Paladins</button>
+            </div>
+            <div class="row">
+                <div class="services col-12 col-lg-4">
+                    <h1>Copied Lore</h1>
+                        <img src="img/worksoftheavowed.png" class="serviceimages" id="scroll" align="right"/>The copying and binding of a work of nonmagical lore in Candlekeep’s library is generally performed at a cost of 100 gp or so (though quite large books are always more). This manufacture may take several weeks, particularly for large tomes, so it isn’t uncommon for those who desire such a work to commission it in writing, along with advance payment, and then come to the gate to pick up the book, or pay an additional price to have it delivered.
+                </div>
+                <div class="services col-12 col-lg-4">
+                    <h1>Spellbooks</h1>
+                        <img src="img/spellbook.png" class="serviceimages" align="right"/>In contrast, magical books of spells and formulae cost much, much more — a spellbook might be priced at thousands or even tens of thousands of gold pieces. Each simple spell or cantrip in such a tome costs 25 gp or so, with the more complex and powerful spells fetching 150 gp or more each.
+                </div>
+                <div class="services col-12 col-lg-4">
+                    <h1>Works of the Avowed</h1>
+                        <img src="img/candlekeeplogo.png" class="serviceimages" align="right"/>Each year, the monks of Candlekeep release a small book stamped with the sigil of the keep, and credited to “The Avowed of Candlekeep.” These books are always focused on singular topics, and contain short essays, excerpts, and other writings germane to the topic. They are sold at Candlekeep and by representatives in large cities for between 50 gp and 100 gp per book, though some are often resold for a great deal more.
+                        Candlekeep also buys books and even sponsors adventurers on expeditions to seek out lost sources of lore across the Realms. The exchange of coin in such undertakings is, of course, open to the usual sort of negotiation.
+                </div> 
+            </div>
+            
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+body{
+    background-image:  url(img/background1.jpg);
+    background-size:  cover;
+    color: white;
+    background-position: center;
+}
+h1 {
+    font-family: 'Petit Formal Script', cursive;
+    margin: 5px 0px 5px 0px;
+
+}
+.intro {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+.avowed {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+.services {
+    background-color:rgba(0,0,0,0.5);
+    text-align: justify;
+}
+
+.services h1{
+    font-size: 30px;
+}
+
+.serviceimages{
+    height: 10em;
+}
+
+.serviceimages#scroll{
+    height: 7em;
+} 
+
+ .images{
+    background-color: #A67761;
+    display: inline-block;
+    height: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#bluepicture{
+    background-image: url(img/faerun.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 345px;
+}
+
+#bluepicture .characterimages{
+    opacity: 0;
+}
+
+.images img:hover{
+    opacity: .5;
+}
+
+.btn {
+    border: none;
+    background-color: rgba(0, 0, 0, .0);
+    padding: 14px 28px;
+    font-size: 30px;
+    font-style: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+.monks {
+    color: green;
+}
+
+.monks:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.wizards {
+    color: blue;
+}
+
+.wizards:hover {
+    background: #2196F3;
+    color: white;
+}
+
+.clerics {
+    color: orange;
+}
+
+.clerics:hover {
+    background: #ff9800;
+    color: white;
+}
+
+.paladins {
+    color: red;
+}
+
+.paladins:hover {
+    background: #f44336;
+    color: white;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#hamburgerbutton{
+    font-size: 50px;
+    align-content: center;
+    padding: 0 10px 0 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
